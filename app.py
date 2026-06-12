@@ -33,7 +33,7 @@ def main():
             """
         )
 
-        input_method = st.radio("Input Method", ("Select from dataset", "Enter conversation manually"))
+        input_method = st.radio("Input Method", ("Select from dataset"))
 
         conversation_text = None
 
@@ -42,7 +42,7 @@ def main():
             selected_conversation = st.selectbox("Select Conversation", conv_options, index=0)
             conversation_text = selected_conversation
         else:
-            conversation_text = st.text_area("Enter Customer Conversation", height=200, placeholder="Type conversation here...")
+            return None
 
         if st.button("Analyze Sentiment"):
             if conversation_text:

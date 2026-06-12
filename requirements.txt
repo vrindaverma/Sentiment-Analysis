@@ -1,5 +1,8 @@
-streamlit 
+streamlit
+transformers
+torch
+sentencepiece
 pandas
-numpy 
+numpy
+scikit-learn
 matplotlib
-python-dotenv
